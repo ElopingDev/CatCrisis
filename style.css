@@ -1,121 +1,145 @@
-
-body {background-color: #8a5a85}
+body {
+    background-color: #2D2D2D
+}
 
 .container {
-	position: absolute;
-	display: block;
-	top: 50%;
-	left: 40%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 40%;
 }
 
 .container>.title a {
-	letter-spacing: normal;
-	color: #9ee7d9;
-	font-family: 'Roboto', sans-serif;
-	font-size: 64px;
-	text-decoration: none;
-	top: 50%;
-	left: 40%;
+    letter-spacing: normal;
+    color: #9ee7d9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    text-decoration: none;
+
 }
 
 .title2 {
-	letter-spacing: normal;
-	color: #9ee7d9;
-	font-family: 'Roboto', sans-serif;
-	font-size: 64px;
-	top: 50%;
-	left: 40%;
+	position: absolute;
+    letter-spacing: normal;
+    color: #9ee7d9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    top:50%;
+    left:38%;
+
 }
 
 .footer {
-	letter-spacing: normal;
-	color: #9ee7d9;
-	font-family: 'Roboto', sans-serif;
-	font-size: 24px;
-	top: 10%;
-	left: 40%;
+	position: absolute;
+    letter-spacing: normal;
+    color: #9ee7d9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    top: 100%;
+    
 }
+
+.github {
+	position: absolute;
+	letter-spacing: normal;
+	top:57%;
+	left:40%;
+}
+
+
 
 /* Animation Cringe */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .link {
-  height: 64px;
-  align-items: center;
-  color: #000;
-  text-decoration: none;
-  display: flex;
+    height: 64px;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    display: flex;
 }
+
 /* Hide extra text */
 .mask {
-  position: relative;
-  padding: 0;
-  height: 64px;
-  /*  Remove overflow to see how it works　:) */
-  overflow: hidden;
+    position: relative;
+    padding: 0;
+    height: 64px;
+    /*  Remove overflow to see how it works　:) */
+    overflow: hidden;
 }
+
 .link-container {
-  transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
 }
+
 .title {
-  display: block;
-  /*  Set same font-size and line height  */
-  font-size: 64px;
-  line-height: 64px;
+    display: block;
+    /*  Set same font-size and line height  */
+    font-size: 64px;
+    line-height: 64px;
 
-  transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
 }
+
 .link-title1 {
-  transform-origin: right center;
+    transform-origin: right center;
 }
-.link-title2 {
-  transform-origin: left center;
-  transform: rotate(64deg);
-}
-.link-icon {
-  position: relative;
-  width: 35px;
-  height: 35px;
-  background: #f8f8ff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
 
-  /*  Remove overflow to see how it works　:) */
-  overflow: hidden;
+.link-title2 {
+    transform-origin: left center;
+    transform: rotate(64deg);
+}
+
+.link-icon {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background: #f8f8ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+    /*  Remove overflow to see how it works　:) */
+    overflow: hidden;
 }
 
 .icon {
-  display: block;
-  position: absolute;
-  transition: transform 0.4s ease;
+    display: block;
+    position: absolute;
+    transition: transform 0.4s ease;
 }
+
 .icon:nth-child(2) {
-  transform: translate(-128px);
+    transform: translate(-128px);
 }
 
 /* Hover Action*/
 
-/* Move up two texts (20px = font-size) */
+/* Move up two texts (64px = font-size) */
 .link:hover .link-container {
-  transform: translateY(-64px);
-}
-/* Rotate texts a little bit */
-.link:hover .link-title1 {
-  transform: rotate(64deg);
-}
-.link:hover .link-title2 {
-  transform: rotate(0);
-}
-/* Move arrows to right */
-.link:hover .icon:first-child {
-  transform: translate(128px);
-}
-.link:hover .icon:nth-child(2) {
-  transform: translate(0px);
+    transform: translateY(-64px);
 }
 
+/* Rotate texts a little bit */
+.link:hover .link-title1 {
+    transform: rotate(64deg);
+}
+
+.link:hover .link-title2 {
+    transform: rotate(0);
+}
+
+/* Move arrows to right */
+.link:hover .icon:first-child {
+    transform: translate(128px);
+}
+
+.link:hover .icon:nth-child(2) {
+    transform: translate(0px);
+}
