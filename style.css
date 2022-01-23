@@ -14,6 +14,26 @@ body {background-color: #8a5a85}
 	font-family: 'Roboto', sans-serif;
 	font-size: 64px;
 	text-decoration: none;
+	top: 50%;
+	left: 40%;
+}
+
+.title2 {
+	letter-spacing: normal;
+	color: #9ee7d9;
+	font-family: 'Roboto', sans-serif;
+	font-size: 64px;
+	top: 50%;
+	left: 40%;
+}
+
+.footer {
+	letter-spacing: normal;
+	color: #9ee7d9;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	top: 10%;
+	left: 40%;
 }
 
 /* Animation Cringe */
